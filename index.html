@@ -8,6 +8,12 @@
     <div
       class="g-recaptcha"
       data-sitekey="6Ld6IKwnAAAAALUQJEe42KQzJiCjzFzbgpynT87r"
+      data-callback="onCompleted"
     ></div>
+    <script type="text/javascript">
+      function onCompleted(response) {
+        kony.recaptchaCompleted(response);
+      }
+    </script>
   </body>
 </html>
