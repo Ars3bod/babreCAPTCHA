@@ -13,7 +13,7 @@
     <script type="text/javascript">
       function onCompleted(response) {
         //kony.evaluateJavaScriptInNativeContext("handleRecaptchaResponse",response);
-      window.location.href = "kony://" + encodeURIComponent(JSON.stringify(response));
+         window.kony.postMessage(response);
       }
     </script>
   </body>
