@@ -12,7 +12,7 @@
     ></div>
     <script type="text/javascript">
       function onCompleted(response) {
-        kony.recaptchaCompleted(response);
+        kony.evaluateJavaScriptInNativeContext("recaptchaCompleted",response);
       }
     </script>
   </body>
