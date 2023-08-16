@@ -12,7 +12,8 @@
     ></div>
     <script type="text/javascript">
       function onCompleted(response) {
-        kony.evaluateJavaScriptInNativeContext("handleRecaptchaResponse",response);
+        //kony.evaluateJavaScriptInNativeContext("handleRecaptchaResponse",response);
+         window.kony.postMessage(response);
       }
     </script>
   </body>
