@@ -14,7 +14,8 @@
       function onCompleted(response) {
         //kony.evaluateJavaScriptInNativeContext("handleRecaptchaResponse",response);
         //window.kony.postMessage(response);
-        window.parent.postMessage(response, "*");
+        //window.parent.postMessage(response, "*");
+        browserWidget.setResponse(response);
       }
     </script>
   </body>
